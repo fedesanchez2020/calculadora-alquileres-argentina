@@ -5,48 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/styles.css">
-   <script src="./js/javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js"></script>
     <title>Calculadora de Alquileres</title>
 </head>
 
 <body>
 
-    <h1>ICL - Índice de Contrato de Locación</h1>
-
-    <p>
-        El ICL es publicado por el BCRA y está destinado a Propietarios e Inquilinos para actualizar el precio del
-        alquiler de la vivienda.
-    </p>
-    <p>
-        Esta calculadora es un trabajo práctico de JavaScript que se mantiene actualizada con los valores mensuales del
-        ICL a fin de poder calcular el precio del alquiler al momento de renovarlo.
-    </p>
-    <p>
-        Para su uso se debe indicar la fecha de inicio del Contrato de Alquiler o fecha de su última renovación, el importe pagado y la fecha de
-        renovación del mismo, dando por resultado el valor correspondiente.
-    </p>
-    <p>
-        ADVERTENCIA: Al ser un trabajo práctico de Programación en JavaScript se recomienda utilizar la misma con
-        precaución y a solo efecto de obtener un estimado del precio del Alquiler. Esta aplicación podría tener errores
-        involuntarios en su código y dar un resultado equivocado.
-    </p>
-    
-    
-    <form name="datos">
-        <label for="fecha1">Selecciona la fecha de Inicio o última Renovación.</label>
-        <input type="date" id="fecha1">
+    <div class="container">
         
-        <label for="fecha2">Selecciona la fecha de Renovacion.</label>
-        <input type="date" id="fecha2">
+        <section><h1>Calculadora de Alquileres</h1>
+        <h3>Incrementos al día de la renovación</h3>
+        <h5>ICL (Índice de Contrato de Locación)</h5>
 
-        <label for="precio1">Precio de Alquiler</label>
-        <input type="text" id="precio1">
-           
+        <p>
+            ADVERTENCIA: Esta calculadora es un trabajo práctico de JavaScript que se mantiene actualizada con los
+            valores
+            mensuales del
+            ICL a fin de poder calcular el precio del alquiler al momento de renovarlo. Se recomienda utilizar la misma
+            con
+            precaución ya que esta aplicación podría tener errores en su código y dar un resultado equivocado.
+        </p></section>
         
-        <button type = "button" onclick="obtenerDatos()">Enviar</button>       
-    </form> 
 
-        <body>
+
+        <form class="datos" name="datos">
+            <label for="fecha1">Selecciona la fecha de Inicio o última Renovación.</label>
+            <input type="date" id="fecha1">
+
+            <label for="precio1">Precio de Alquiler</label>
+            <input type="text" id="precio1">
+            
+            <label for="fecha2">Selecciona la fecha de Renovacion.</label>
+            <input type="date" id="fecha2">
+
+
+            <button type="button" onclick="obtenerDatos()">Enviar</button>
+        </form>
+
+        <label id="precio_renovacion"></label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+
+<body>
 
 </html>
