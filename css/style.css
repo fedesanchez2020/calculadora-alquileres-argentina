@@ -95,10 +95,6 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .formulario__input {
-        width: 100%;
-    }
-
     .formulario__grupo-btn-calcular,
     .formulario__btn {
     grid-column: 1;
