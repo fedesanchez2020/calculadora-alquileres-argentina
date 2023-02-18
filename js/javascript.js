@@ -159,6 +159,6 @@ function obtenerDatos() {
     
     let mostrarPrecio = document.getElementById('formulario__mensaje-precio2');
 
-    mostrarPrecio.innerHTML = "<h4 style='font-size: 20px; text-align: center; color: #fafafa; background: rgb(171, 52, 52); padding: 10px 20px; border-radius: 3px;'>"
+    mostrarPrecio.innerHTML = "<h4 style='font-size: 20px; text-align: center; color: #fafafa; background: rgb(171, 52, 52); margin-bottom: 40px; padding: 10px 20px; border-radius: 3px;'>"
      + "Precio actualizado: " + "<br>$ " + renovacion + "</h4>";
 }
