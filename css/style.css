@@ -46,13 +46,6 @@ main {
     margin: auto;
 }
 
-.formulario__label {
-    display: block;
-    font-weight:700;
-    padding:10px;
-    cursor: pointer;
-}
-
 .formulario__input {
     width: 100%;
     background: #fff;
