@@ -138,7 +138,7 @@ let datos = {
     //Después de actualizar el objeto datos, modificar fechas en html
 };
 
-let anio1, anio2, mes1, mes2, dia1, dia2, precio1, precio2, fechaFormateada1, fechaFormateada2, valorFecha1, valorFecha2, renovacion, mostrarPrecio;
+let anio1, anio2, mes1, mes2, dia1, dia2, precio1, precio2, fechaFormateada1, fechaFormateada2, valorFecha1, valorFecha2, renovacion, mostrarPrecio, porcentual;
 
 function recuperarValor(valorBuscado) {
     return datos[valorBuscado];
@@ -164,11 +164,11 @@ function obtenerDatos() {
     valorFecha2 = recuperarValor(fechaFormateada2); 
     
     renovacion = Math.round((precio1 / valorFecha1) * valorFecha2);
-    
+    porcentual = (renovacion - precio1) / precio1 * 100;
     mostrarPrecio = document.getElementById('formulario__mensaje-precio2');
 
     mostrarPrecio.innerHTML = `<h4 style='font-size: 20px; text-align: center; color: #fafafa; background: rgb(171, 52, 52); margin-bottom: 40px; padding: 10px 20px; border-radius: 3px;'>
-    Precio actualizado:<br>$ ${renovacion}</h4><div class='formulario__grupo-btn-calcular'><button type='button' onclick='location.reload()' class='formulario__btn'>Borrar</button>
+    Precio actualizado:<br>$ ${renovacion} (${porcentual.toFixed(2)}%)</h4><div class='formulario__grupo-btn-calcular'><button type='button' onclick='location.reload()' class='formulario__btn'>Borrar</button>
     <p id='formulario__mensaje-precio2'></p></div>`;
 }
 

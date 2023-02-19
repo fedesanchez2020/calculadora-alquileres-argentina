@@ -40,6 +40,10 @@ main {
     border: none;
 }
 
+.fechas {
+    grid-column: span 3;
+    font-size: 14px !important;
+}
 .select-precio1 {
     grid-column: span 3;
     width: 25%;
