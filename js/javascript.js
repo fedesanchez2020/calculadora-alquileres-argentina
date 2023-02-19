@@ -138,26 +138,34 @@ let datos = {
     //Después de actualizar el objeto datos, modificar fechas en html
 };
 
+let anio1, anio2, mes1, mes2, dia1, dia2, precio1, precio2, fechaFormateada1, fechaFormateada2, valorFecha1, valorFecha2, renovacion, mostrarPrecio;
+
 function recuperarValor(valorBuscado) {
     return datos[valorBuscado];
 }
 
 function obtenerDatos() {
-    let fecha1 = document.getElementById('fecha1').value;
-    let fechaFormateada1 = "A" + fecha1;
+    //Fecha inicio
+    dia1 = document.getElementById('dia1').value;
+    mes1 = document.getElementById('mes1').value;
+    anio1 = document.getElementById('anio1').value;
+    fechaFormateada1 = `A${anio1}-${mes1}-${dia1}`;
+    
+    //Precio al inicio
+    precio1 = document.getElementById('precio1').value;
 
-    let fecha2 = document.getElementById('fecha2').value;
-    let fechaFormateada2 = "A" + fecha2;
-
-    let precio1 = document.getElementById('precio1').value;
+    //Fecha renovación
+    dia2 = document.getElementById('dia2').value;
+    mes2 = document.getElementById('mes2').value;
+    anio2 = document.getElementById('anio2').value;
+    fechaFormateada2 = `A${anio2}-${mes2}-${dia2}`;
     
-    let valorFecha1 = recuperarValor(fechaFormateada1); 
+    valorFecha1 = recuperarValor(fechaFormateada1); 
+    valorFecha2 = recuperarValor(fechaFormateada2); 
     
-    let valorFecha2 = recuperarValor(fechaFormateada2); 
+    renovacion = Math.round((precio1 / valorFecha1) * valorFecha2);
     
-    let renovacion = Math.round((precio1 / valorFecha1) * valorFecha2);
-    
-    let mostrarPrecio = document.getElementById('formulario__mensaje-precio2');
+    mostrarPrecio = document.getElementById('formulario__mensaje-precio2');
 
     mostrarPrecio.innerHTML = "<h4 style='font-size: 20px; text-align: center; color: #fafafa; background: rgb(171, 52, 52); margin-bottom: 40px; padding: 10px 20px; border-radius: 3px;'>"
      + "Precio actualizado: " + "<br>$ " + renovacion + "</h4>";

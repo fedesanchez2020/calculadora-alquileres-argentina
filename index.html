@@ -15,52 +15,182 @@
 
 <body>
     <main>
-        
+
         <h1>
             Calculadora de Alquileres
         </h1>
         <p>Válido para la República Argentina</p>
-        
+
         <form action="" class="formulario" id="formulario">
-            <!-- Grupo: fecha1 -->
-            <div id="grupo__fecha1">
-                <label for="fecha1" class="formulario__label">Fecha de Inicio:</label>
-                <div>
-                    <input type="date" class="formulario__input" name="fecha1" id="fecha1" value="2022-02-01" min="2020-07-01" max="2023-03-16" placeholder="Ingrese fecha de inicio" required>
-                </div>
+            <div class="campo">
+                <p>Fecha de Inicio</p>
             </div>
-
+            
+            <div>
+                <label for="dia1" class="formulario__label">Día</label>
+                <select class="formulario__input" name="dia1" id="dia1">
+                    <option value="" selected>Día</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <div>
+                <label for="mes1" class="formulario__label">Mes</label>
+                <select class="formulario__input" name="mes1" id="mes1">
+                    <option value="1" selected>Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+            <div>
+                <label for="anio1" class="formulario__label">Año</label>
+                <select class="formulario__input" name="anio1" id="anio1">
+                    <option value="1" selected>Año</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+        
+            <div class="campo" >
+                <p>Precio Convenido</p>
+            </div>
+        
             <!-- Grupo: Precio Inicial -->
-            <div id="grupo__precio1">
-                <label for="precio1" class="formulario__label">Precio Convenido:</label>
+            <div class="select-precio1">
                 <div>
-                    <input type="number" class="formulario__input" name="precio1" id="precio1" placeholder="Solo números. Ej: 10000" required>
+                    <input type="number" class="formulario__input" name="precio1" id="precio1"
+                        placeholder="Ej: 10000">
                 </div>
             </div>
-
+        
+            <div class="campo" >
+                <p >Fecha de Renovación</p>
+            </div>
             <!-- Grupo: fecha2 -->
-            <div id="grupo__fecha2">
-                <label for="fecha2" class="formulario__label">Fecha de Actualización:</label>
-                <div>
-                    <input type="date" class="formulario__input" name="fecha2" id="fecha2" value="2023-02-01" min="2020-07-01" max="2023-03-16" placeholder="Ingrese fecha renovación" required>
-                </div>
+            <div>
+                <label for="dia2" class="formulario__label">Día</label>
+                <select class="formulario__input" name="dia2" id="dia2">
+                    <option value="1" selected>Día</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
             </div>
-
+            <div>
+                <label for="mes2" class="formulario__label">Mes</label>
+                <select class="formulario__input" name="mes2" id="mes2">
+                    <option value="1" selected>mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+            <div>
+                <label for="anio2" class="formulario__label">Año</label>
+                <select class="formulario__input" name="anio2" id="anio2">
+                    <option value="1" selected>Año</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
             <!-- Grupo: botón -->
             <div class="formulario__grupo-btn-calcular">
                 <button type="button" onclick="obtenerDatos()" class="formulario__btn">Calcular</button>
-                <p  id="formulario__mensaje-precio2"></p>
+                <p id="formulario__mensaje-precio2"></p>
             </div>
         </form>
-        
+
         <p class="disclaimer">
-            ADVERTENCIA: Esta calculadora es un trabajo práctico de JavaScript que puede contener errores. Se mantiene actualizada con
-            los valores mensuales del ICL (Índice de Contrato de Locación) a fin de poder calcular el precio del alquiler al momento de
+            ADVERTENCIA: Esta calculadora es un trabajo práctico de JavaScript que puede contener errores. Se mantiene
+            actualizada con
+            los valores mensuales del ICL (Índice de Contrato de Locación) a fin de poder calcular el precio del
+            alquiler al momento de
             renovarlo.
         </p>
     </main>
-    
+
     <script src="./js/javascript.js"></script>
+
 <body>
 
 </html>
